@@ -37,7 +37,7 @@ public class LineComparison {
         System.out.println("Enter end point y coordinate");
         int ay2 = scanner.nextInt();
 
-        System.out.print("Using the Cartesian system length of first line =");
+        System.out.print("Using the Cartesian system length of second line =");
         double length2 = Math.sqrt((ax2 - ax1) ^ 2 + (ay2 - ay1) ^ 2);
         System.out.println(length2);
 
@@ -46,9 +46,15 @@ public class LineComparison {
         if (length1 == length2) {
             System.out.println("Both line are equal");
 
+        } else if (length1 < length2) {
+            System.out.println("line 2 is greater than line 1");
+
         } else {
-            System.out.println("Both line are not equal");
+            System.out.println("line 1 is greater than line 2");
+
+
         }
+
 
     }
 }
